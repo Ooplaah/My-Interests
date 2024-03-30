@@ -1,0 +1,394 @@
+<!-- Requirements
+- 3 pages of .html
+- subfolders for images, styles, scripts
+- reset.css
+- boilerplate
+- favicon
+- 2 custom fonts 
+- header, footer, main/div class = content
+- header with nav a <a>
+- <a> hover state and visted state
+- images have alt tags
+- each page is a different layout using display: grid
+- JavaScript components
+- complete and generally well styled 
+- have the site live to the world via GitHub
+- responsive!!!! 
+
+
+types of pages brainstorm:
+
+- My artworks/thoughts on creating art *****
+- hobbies - crocheting, bead work, clay stuff, music, foraging ****
+- wicca **** spells spirit guides history what is it? altar tarot manifestation 
+- retro style wiblur soot old stylized
+
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+
+    <!-- stylesheet stuff -->
+    <!-- needs an image -->
+    <link href="images/personal_logo.png" rel="icon">
+    <link href="styles/reset.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="default_nav">
+            <img class=logo src="images/personal_logo.png" alt="Signature logo of A C H">
+            <a href="index.html"><button>Home</button></a>
+            <a href="wicca.html"><button>Wicca</button></a>
+            <a href="hobbies.html"><button>Hobbies</button></a>
+            <a href="artworks.html"><button>Artworks</button></a>
+            <img class="big_x" src="images/x_icon.png" alt="small x icon">
+        </nav>
+
+        <!-- <button onclick="toggle_menu">H</button> -->
+
+        <nav id="mobile_nav" class="mobile_nav hidden">
+            <img class=logo src="images/personal_logo.png" alt="Signature logo of A C H">
+
+
+
+            <button onclick="toggle_menu()" id="mobile_menu">Menu</button>
+
+            <img class="big_x" src="images/x_icon.png" alt="small x icon">
+        </nav>
+        <div id="menuLinks" class="menuLinks">
+            <a href="index.html"><button>Home</button></a>
+            <a href="wicca.html"><button>Wicca</button></a>
+            <a href="hobbies.html"><button>Hobbies</button></a>
+            <a href="artworks.html"><button>Artworks</button></a>
+        </div>
+    </header>
+
+
+    <div class="content">
+        <div class="window">
+            <div class="intro">
+                <div class="window__xbar">
+                    <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                </div>
+                <div class="window__content">
+                    <h1>Anika's Interests</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- section 1 -->
+
+        <section class="section_1_intro">
+            <div class="intro2">
+                <div class="window">
+
+                    <div class="window__xbar">
+                        <!-- <button><img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px></button> -->
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content">
+                        <h2>Welcome to the ever expanding world of me!</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="spelljar">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="spelljar--img" src="images/anxiety_relief_spell_jar.jpg"
+                            alt="an anxiety relief spell jar">
+                    </div>
+                </div>
+            </div>
+            <div class="strawberry_frog">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="strawberry_frog--img" src="images/strawberry_frog.jpg"
+                            alt="crocheted red frog with a green sprig on the head">
+                    </div>
+                </div>
+            </div>
+            <div class="comfy_cozy">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+
+                        <img class="comfy_cozy--img" src="images/comfy__cozy.png"
+                            alt="digital drawing of friends hanging out in a cozy environment">
+
+                    </div>
+                </div>
+            </div>
+            <div class="tcup">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="tcup--img" src="images/tcup_on_coaster.jpg"
+                            alt="mossy teacup with little blue mushrooms along the sides like shelves">
+                    </div>
+                </div>
+            </div>
+            <div class="sam_thayer">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="sam_thayer--img" src="images/sam_thayers_field_guide.jpg"
+                            alt="book cover of Sam Thayer's field guide to edible wild plants">
+                    </div>
+                </div>
+            </div>
+            <div class="pond">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="pond--img" src="images/pond.jpg"
+                            alt="a watercolour painting of a small pong in the forest with lots of blues, greens and yellows">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 2 -->
+
+        <section class="section_2_wicca">
+            <div class="wicca">
+                <div class="window">
+
+                    <div class="window__xbar">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content">
+                        <a href="wicca.html">Welcome to Wicca</a>
+                        <p>
+                            <br>
+                            I'm wiccan and practice Wicca! Not many people know of Wicca
+                            due to its small population size, which makes sense considering
+                            it can be individually followed or be followed in groups of at
+                            least three, called a coven. It's not an “Organized Religion” so
+                            it's hard to say how many people actually practice it.
+                            So here I will inform you of all the things I practice and even some
+                            spells I've done!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="goddess_symbol">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="goddess_symbol--img" src="images/goddess_symbol.jpg"
+                            alt="the goddesssymbol, a circle with two quarter moons on each side, a pentacle in the center of this one">
+                    </div>
+                </div>
+            </div>
+            <div class="goddess_and_god">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="goddess_and_god--img" src="images/goddess_and_god.jpg"
+                            alt="the mother goddess and the horned god kissing">
+                    </div>
+                </div>
+            </div>
+            <div class="oil_spell">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="oil_spell--img" src="images/abundance_oil_spell.jpg"
+                            alt="oil and herbs within an oil dropper jar">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 3 -->
+
+        <section class="section_3_hobbies">
+            <div class="hobbies">
+                <div class="window">
+                    <div class="window__xbar">
+                        <!-- <button><img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px></button> -->
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content">
+                        <a href="hobbies.html">My Hobbies</a>
+                        <p>
+                            <br>
+                            To start off I have ADHD. SO it's really no one's surprise when I
+                            hyperfocus on a whole new topic any other week. Typically all my hyperfocusses
+                            are something crafty, that can be done with my hands! I pick up wayyy too many
+                            random hobbies to be healthy, but it's fun! I'll eventualllllly cycle back to
+                            the hobby so it's fine! So come check 'em out!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="dino">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="dino--img" src="images/dino.jpg"
+                            alt="crocheted light blue round dino with light yellow spine spikes">
+                    </div>
+                </div>
+            </div>
+            <div class="frogs">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="frogs--img" src="images/double_frogs.jpg"
+                            alt="both previously shown frogs on their hind legs, supporting each other to show their stomachs">
+                    </div>
+                </div>
+            </div>
+            <div class="purple_flowered_raspberries">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="purple_flowered_raspberries--img" src="images/purple_flowered_raspberries.png"
+                            alt="flowers on a bush with bright pink petals and a hand beside them holding the rasperries from the plant">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="section_4_artworks">
+            <div class="artworks">
+                <div class="window">
+                    <div class="window__xbar">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content">
+                        <a href="artworks.html">My Artworks</a>
+                        <p>
+                            <br>
+                            Here are all my artworks from digital to traditional! I started doing
+                            art from a very young age and just never really put down the pencil.
+                            Although I've fallen off making art as of recently, I still love creating!
+                            My proficiency is generally in realism and digital art,
+                            but you'll get to see everything!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="girl_on_fire">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="girl_on_fire--img" src="images/girl_on_fire.jpg"
+                            alt="digital oil paiting styled painting of a girl all in shades of red with pink background">
+                    </div>
+                </div>
+            </div>
+
+            <div class="man_pencil_portrait">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="man_pencil_portrait--img" src="images/man_pencil_portrait.jpg"
+                            alt="a traditional drawing in pencil of a man looking head on with a cross hatching stylization">
+                    </div>
+                </div>
+            </div>
+
+            <div class="lips">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="lips--img" src="images/lips.jpg" alt="very realistic digital painting of lips">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tree_blob">
+                <div class="window--img">
+                    <div class="window__xbar--img">
+                        <img class="smol_x" src="images/x_icon.png" alt="small x icon" width=15px>
+                    </div>
+                    <div class="window__content--img">
+                        <img class="tree_blob--img" src="images/tree_blob.jpg"
+                            alt="digital painting of a tree that is dark and spindely surounded by very turquoise, blue, green forest, all in a blob like impressionistic style">
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Website Created by Anika Chan-Heuthorst</p>
+        
+        <img class="insta" src="images/ig_logo.png" alt="instagram black and white logo">
+        <a href="https://www.instagram.com/_ooplah_?igsh=MzRlODBiNWFlZA==" target="_blank">@_ooplah_</a>
+
+    </footer>
+
+
+
+    <div class="scroll-container">
+        <a href="#top" ><img class="arrow" src="images/up-arrow.png"></a></a>
+    </div>
+
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
